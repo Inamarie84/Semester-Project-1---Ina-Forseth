@@ -15,18 +15,20 @@
 <body>
     <header>
         <a href="/index.html"><img src="/images/logo.png" alt="logo of Comunnity Science Museum" class="logo"></a>
+        <input type="checkbox" id="menu-checkbox">
         <div class="navbar">
             <nav class="links">
-            <a href="/index.html">Home</a>
+            <a href="/index.html" class="active">Home</a>
             <a href="/explore.html">Explore</a>
             <a href="/exhibitions.html">Exhibition Spaces</a>
             <a href="/getinvolved.html">Get involved</a>
+            <a href="/events.html">Events</a>
             <a href="/visit.html">Visit</a>
         </nav>
         </div>
         <div class="icons">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-bars"></i>
+            <label for="menu-checkbox" class="hamburger-menu"><i class="fa-solid fa-bars"></i><span class="hidden">Menu
+            </span></label>
         </div>
     </header>
     <main>
@@ -49,7 +51,7 @@
         </section>
         <section class="infohome">
         <div class="row">
-        <h2 class="h2home">The aim...</h2>
+        <h2 class="h2home h2home1">The aim...</h2>
         </div>
         <div class="grid-container">
         <div class="column">
@@ -75,56 +77,69 @@
         </section>
         <section>
             <div>
-                <h3>go explore our universe</h3>
+                <h3 class="h3-h">go explore our universe</h3>
                 <img src="/images/image1.jpg" alt="image of planets" class="roundimage">
                 <a href="/explore.html" class="cta">Learn more</a>
             </div>
             <div>
-                <h3>check out our exhibition spaces</h3>
+                <h3 class="h3-h">check out our exhibition spaces</h3>
                 <img src="/images/image12.jpg" alt="image of mammal skeleton" class="roundimage">
                 <a href="/exhibitions.html" class="cta">Learn more</a>
             </div>
             <div>
-                <h3>upcoming events</h3>
+                <h3 class="h3-h">upcoming events</h3>
                 <img src="/images/image2.jpg" alt="image from inside a gallery" class="roundimage">
                 <a href="/events.html" class="cta">Learn more</a>
             </div>
             <div>
-                <h3>how to get involved</h3>
+                <h3 class="h3-h">how to get involved</h3>
                 <img src="/images/image21.jpg" alt="image looking out trough a glass dome" class="roundimage">
                 <a href="/getinvolved.html" class="cta">Learn more</a>
             </div>
         </section>
         <section>
             <div>
-            <h4>admission</h4>
+            <h4 class="h4-h">admission</h4>
             <p>The entrance is free for all.</p>
-            <h4>accessibility</h4>
+            <h4 class="h4-h">accessibility</h4>
             <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired..</p>
             <a href="/visit.html" class="cta">Learn more</a>
         </div>
         </section>
     </main>
     <footer>
-        <div>
+        <div class="footer-container">
+        <div class="footer-column">
             <p class="fheading">connect with us!
                 <div class="footericons">
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-facebook-messenger"></i>
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
-                </div>
             </p>
-            <p class="fheading">contact us
+        </div>
+    </div>
+        <div class="footer-column">
+            <p class="fheading">contact us:
                 <p>post@communitysciencemuseum.com</p>
                 <p>+4740217031</p>
             </p>
-            <p class="fheading">visit us
-                <p class="fheading">community science museum</p>
+        </div>
+        <div class="footer-column">
+            <p class="fheading">visit us:
+                <p>Community Science Museum</p>
                 <p>Kongens Gate 1, 7011 Trondheim</p>
             </p>
-            <p class="fheading">subscribe to our newsletter:</p>
-            <p class="fheading">Copyright &copy; community science muesum</p>
+        </div>
+        <div class="footer-column">
+            <form method="post" class="subscribe">
+                <label for="email" class="fheading">Subscribe to our newsletter:</label>
+                <input type="email" id="email" name="email" class="subscribe-input" placeholder="Type your E-mail address">
+                <button type="submit" value="submit" class="cta-footer">Subscribe</button>
+                </form>
+        </div>
+        <div class="footer-row">
+            <p class="fheading">Copyright &copy; community science museum</p>
         </div>
     </footer>
 </body>

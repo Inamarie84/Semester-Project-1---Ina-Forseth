@@ -12,25 +12,59 @@
 <body>
     <header>
         <a href="/index.html"><img src="/images/logo.png" alt="logo of Comunnity Science Museum" class="logo"></a>
+        <input type="checkbox" id="menu-checkbox">
         <div class="navbar">
             <nav class="links">
             <a href="/index.html">Home</a>
             <a href="/explore.html">Explore</a>
-            <a href="/exhibitions.html">Exhibition Spaces</a>
+            <a href="/exhibitions.html" class="active">Exhibition Spaces</a>
             <a href="/getinvolved.html">Get involved</a>
+            <a href="/events.html">Events</a>
             <a href="/visit.html">Visit</a>
         </nav>
         </div>
         <div class="icons">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-bars"></i>
+            <label for="menu-checkbox" class="hamburger-menu"><i class="fa-solid fa-bars"></i><span class="hidden">Menu
+            </span></label>
         </div>
     </header>
     <main>
-
+        <h1 class="h1 h1-2">Exhibition spaces</h1>
     </main>
     <footer>
-        
+        <div class="footer-container">
+        <div class="footer-column">
+            <p class="fheading">connect with us!
+                <div class="footericons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </p>
+        </div>
+    </div>
+        <div class="footer-column">
+            <p class="fheading">contact us:
+                <p>post@communitysciencemuseum.com</p>
+                <p>+4740217031</p>
+            </p>
+        </div>
+        <div class="footer-column">
+            <p class="fheading">visit us:
+                <p>Community Science Museum</p>
+                <p>Kongens Gate 1, 7011 Trondheim</p>
+            </p>
+        </div>
+        <div class="footer-column">
+            <form method="post" class="subscribe">
+                <label for="email" class="fheading">Subscribe to our newsletter:</label>
+                <input type="email" id="email" name="email" class="subscribe-input" placeholder="Type your E-mail address">
+                <button type="submit" value="submit" class="cta-footer">Subscribe</button>
+                </form>
+        </div>
+        <div class="footer-row">
+            <p class="fheading">Copyright &copy; community science museum</p>
+        </div>
     </footer>
 </body>
 </html>
