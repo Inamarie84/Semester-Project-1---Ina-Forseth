@@ -3,6 +3,14 @@
 
 /* Variables */
 
+:root {
+    --color-explore: #F48484;
+    --color-exhibitions: #8099F4;
+    --color-getinvolved:  #F2AE49;
+    --color-events: #DAA7EC;
+    --color-visit: #95D086;
+}
+
 /* Global */
 
 html {
@@ -29,6 +37,8 @@ main {
     letter-spacing: 5px;
     text-align: center;
     text-shadow: 2px 4px 4px #c1beba;
+    margin-bottom: 80px;
+    padding: 20px;
 }
 
 .h1::before {
@@ -43,34 +53,68 @@ main {
 }
 
 .h1-1::before {
-    background-color: #F48484;
+    background-color: var(--color-explore);
 }
 
 .h1-2::before {
-    background-color: #8099F4;
+    background-color: var(--color-exhibitions);
 }
 
 .h1-3::before {
-    background-color: #F2AE49;
+    background-color: var(--color-getinvolved);
 }
 
 .h1-4::before {
-    background-color: #DAA7EC;
+    background-color: var(--color-events);
 }
 
 .h1-5::before {
-    background-color: #95D086;
+    background-color: var(--color-visit);
 }
 
 .h3-h {
     text-transform: uppercase;
+    padding: 30px;
+    margin: -20px;
+    box-shadow:  2px 4px 4px #c1beba;
+}
+
+.h3-h1 {
+    background-color: var(--color-explore);
+}
+
+.h3-h2 {
+    background-color: var(--color-exhibitions);
+}
+
+.h3-h3 {
+    background-color: var(--color-events);
+}
+
+.h3-h4 {
+    background-color: var(--color-getinvolved);
 }
 
 .h4-h {
     text-transform: uppercase;
-    color: #95D086;
+    color: var(--color-visit);
 }
 
+.h2-explore, .h2-exhibitions {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-shadow: 2px 4px 4px #c1beba;
+    margin-left: 80px;
+    padding-top: 30px;
+}
+
+.h2-explore {
+    color: var(--color-explore);
+}
+
+.h2-exhibitions {
+    color: var(--color-exhibitions);
+}
 /* -----------Header----------- */
 
 header {
@@ -133,12 +177,16 @@ header {
 /*active indicator*/
 
 .active {
-    background-color: #95D086;
+    background-color: var(--color-visit);
 }
 
 header .navbar .links a:hover {
-    color: #95D086;
+    color: var(--color-visit);
     text-decoration: underline;
+}
+
+.cta:hover {
+    background-color: var(--color-getinvolved);
 }
 
 
@@ -173,7 +221,6 @@ header .navbar .links a:hover {
     text-shadow: 2px 4px 4px #c1beba; 
 }
 
-
 .row {
     grid-row: 1;
 }
@@ -205,7 +252,7 @@ header .navbar .links a:hover {
     margin-left: 88px;
     padding: 10px;
     font-size: 40px;
-    color: #95D086;
+    color: var(--color-visit);
     font-weight: 400;
 }
 
@@ -239,14 +286,150 @@ hr {
 
 /*section4*/
 
-.roundimage {
-    box-sizing: border-box;
-    object-fit: contain;
-    padding: 15px;
-    border-radius: 50%;
-    max-width: 100px;
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    margin: 80px;
 }
 
+.column2 {
+    border: 1px solid #fff;
+    box-shadow: 2px 4px 4px #c1beba; 
+    padding: 20px;
+    text-align: center;
+}
+
+.column2:last-child {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.column2 img {
+    display: block;
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+    margin: 40px auto 40px;
+}
+
+/* -----------Explore----------- */
+
+/*For kids*/
+
+.kids, .teachers, .researchers, .cosmology {
+    background-color: #F5F5F5;
+    margin: 40px 60px;
+    box-shadow: 2px 4px 4px #c1beba; 
+}
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 80px;
+}
+
+.img-kids, .img-researchers {
+    display: flex;
+    max-width: 60%;
+    height: auto;
+    margin: auto;
+    box-shadow: 2px 4px 4px #c1beba; 
+}
+
+.info-kids, .info-teachers, .info-researchers, .info-cosmology {
+    line-height: 2;
+    font-size: 20px;
+}
+
+/*For teachers*/
+
+.grid-container4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-teachers {
+    grid-column: 1/-1;
+    text-align: left;
+    margin: auto 80px;
+}
+
+.img-teachers {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    position: relative; 
+    margin: 10px auto 40px;
+    box-shadow: 2px 4px 4px #c1beba; 
+}
+
+/*For researchers*/
+
+.grid-container5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.info-researchers {
+    grid-column: 1/-1;
+    text-align: left;
+    margin: auto 80px;
+}
+
+.img-researchers, .column5, .column-5 {
+    display: flex;
+    max-width: 100%; 
+    height: auto;  
+}
+
+.column5 {
+    margin-left: 20px;
+}
+
+.column-5 {
+    margin: 20px;
+}
+
+/* -----------Exhibitions----------- */
+
+.grid-container6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.column6 {
+    text-align: left;
+}
+
+.info-cosmology {
+    margin: 80px 20px 0px 80px;
+}
+
+.column6-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-exhibitions {
+    max-width: 60%;
+    height: auto;
+    box-shadow: 2px 4px 4px #c1beba;
+    margin: 20px auto 40px;
+}
+
+/* -----------Get Involved----------- */
+/* -----------Events----------- */
+/* -----------Visit----------- */
 /* -----------Footer----------- */
 
 footer {
@@ -302,10 +485,26 @@ form {
     margin-top: 10px;
 }
 
-/* buttons*/
 
-/* button footer*/
+/* buttons */
 
+/* main button */
+.cta {
+    display: inline-block;
+    background-color: #95D086;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100px;
+    margin: auto;
+}
+
+
+/* button footer */
 .cta-footer {
     background-color: #95D086;
     padding: 5px 10px;
@@ -316,3 +515,26 @@ form {
     width: 100px;
     margin: 5px;
 }
+
+
+/*@media-queries*/
+@media screen and (max-width: 768px) {
+    .grid-container2 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Reset column spans for smaller screens */
+    .column2:nth-child(5),
+    .column2:nth-child(6),
+    .column2:last-child {
+        grid-column: auto;
+    }
+}
+In this example, the first row of the grid contains three equal columns, and the second row contains two columns with the specified proportions (1/3 and 2/3). The layout is achieved using the grid-template-columns and grid-column properties.
+
+Remember to adjust any colors, padding, margins, or other properties to match your design preferences.
+
+
+
+
+
