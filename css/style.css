@@ -6,15 +6,18 @@
 :root {
     --color-explore: #F48484;
     --color-exhibitions: #8099F4;
-    --color-getinvolved:  #F2AE49;
+    --color-getinvolved: #F2AE49;
     --color-events: #DAA7EC;
     --color-visit: #95D086;
+    --color-shadow: #c1beba;
+    --color-white: #FFF;
+    --color-black: #000;
+    --color-background: #F5F5F5;
 }
 
 /* Global */
 
 html {
-    font-size: 15px;
     scroll-behavior: smooth;
     
 }
@@ -22,6 +25,7 @@ html {
 body {
     min-height: 100vh;
     margin: 0px;
+    padding-top: 150px;
 }
 
 main {
@@ -36,8 +40,8 @@ main {
     font-size: 40px;
     letter-spacing: 5px;
     text-align: center;
-    text-shadow: 2px 4px 4px #c1beba;
-    margin-bottom: 80px;
+    text-shadow: 2px 4px 4px var(--color-shadow);
+    margin-bottom: 20px;
     padding: 20px;
 }
 
@@ -49,7 +53,7 @@ main {
     border-radius: 50%;
     margin-right: -30px;
     margin-bottom: -15px; 
-    box-shadow: 2px 4px 4px #c1beba;
+    box-shadow: 2px 4px 4px var(--color-shadow);
 }
 
 .h1-1::before {
@@ -76,7 +80,7 @@ main {
     text-transform: uppercase;
     padding: 30px;
     margin: -20px;
-    box-shadow:  2px 4px 4px #c1beba;
+    box-shadow: 2px 4px 4px var(--color-shadow);
 }
 
 .h3-h1 {
@@ -100,29 +104,50 @@ main {
     color: var(--color-visit);
 }
 
-.h2-explore, .h2-exhibitions {
+.h2-explore, .h2-exhibitions, .h2-events {
     text-transform: uppercase;
     font-size: 30px;
-    text-shadow: 2px 4px 4px #c1beba;
-    margin-left: 80px;
-    padding-top: 30px;
+    text-shadow: 2px 4px 4px var(--color-shadow);
 }
 
 .h2-explore {
     color: var(--color-explore);
+    margin-top: 20px;
 }
 
 .h2-exhibitions {
     color: var(--color-exhibitions);
 }
+
+.h2-getinvolved {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: var(--color-getinvolved);
+    text-shadow: 2px 4px 4px var(--color-shadow);
+    text-align: left;
+}
+
+.h2-events {
+    color: var(--color-events);
+}
+
+.h3-biology, .h3-ai {
+    font-size: 26px;
+}
+
+
 /* -----------Header----------- */
 
 header {
     font-family: "roboto flex", Verdana, Geneva, Tahoma, sans-serif;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-black);
+    color: var(--color-white);
     padding: 10px;
     font-size: 16px;
     text-transform: uppercase;
@@ -140,14 +165,21 @@ header {
 
 /*Nav*/
 
-.links a {
+.navbar {
+    display: flex;
+    flex: 5;
+    justify-content: center;
     position: static;
+    font-size: 16px;
+}
+
+.links a {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
-    padding: 20px;
+    color: var(--color-white);
+    padding: 8px 20px;
     margin: 30px 20px;
-    font-family: "roboto flex";
+   
 }
 
 .icons i {
@@ -174,7 +206,7 @@ header {
   display: none;
 }
 
-/*active indicator*/
+/*active indicators*/
 
 .active {
     background-color: var(--color-visit);
@@ -188,8 +220,6 @@ header .navbar .links a:hover {
 .cta:hover {
     background-color: var(--color-getinvolved);
 }
-
-
 
 /* -----------Home----------- */
 /*section1*/
@@ -206,19 +236,19 @@ header .navbar .links a:hover {
 .introhome {
     display: grid;
     grid-template-rows: 1fr auto;
-    background-color: #F2AE49;
-    color: #fff;
+    background-color: var(--color-getinvolved);
+    color: var(--color-white);
     box-shadow: 4px 4px 10px 4px #c1beba;
 }
-
 
 .h1home {
     display: flex;
     justify-content: center;
     font-size: 45px;
+    margin: 20px 40px;
     font-weight: bold;
     text-transform: uppercase;
-    text-shadow: 2px 4px 4px #c1beba; 
+    text-shadow: 2px 4px 4px var(--color-shadow);
 }
 
 .row {
@@ -232,7 +262,7 @@ header .navbar .links a:hover {
     margin: -80px 100px 40px;
 }
 
-.column {
+.column { 
     display: contents;
 }
 
@@ -243,7 +273,8 @@ header .navbar .links a:hover {
 }
 
 .dinosaur {
-    max-width: 80%;
+    max-width: 100%;
+   
 }
 
 /*section3*/
@@ -269,13 +300,13 @@ header .navbar .links a:hover {
 .info {
     font-size: 18px;
     line-height: 2;
-    margin: auto;
+    margin: 30px auto;
 }
 
 
 .imghome {
-    max-width: 40%;
-    box-shadow: 2px 4px 4px #c1beba;
+    max-width: 60%;
+    box-shadow: 2px 4px 4px var(--color-shadow);
     margin: 40px auto;
 }
 
@@ -295,8 +326,8 @@ hr {
 }
 
 .column2 {
-    border: 1px solid #fff;
-    box-shadow: 2px 4px 4px #c1beba; 
+    border: 1px solid var(--color-white);
+    box-shadow: 2px 4px 4px var(--color-shadow); 
     padding: 20px;
     text-align: center;
 }
@@ -309,39 +340,70 @@ hr {
 }
 
 .column2 img {
-    display: block;
+    display: flex;
+    margin: 40px auto 20px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    width: 50%;
-    height: auto;
-    margin: 40px auto 40px;
+    box-shadow: 2px 4px 4px var(--color-shadow);
+    overflow: hidden;
 }
 
 /* -----------Explore----------- */
 
 /*For kids*/
 
-.kids, .teachers, .researchers, .cosmology {
-    background-color: #F5F5F5;
+.kids, 
+.teachers, 
+.researchers, 
+.cosmology, 
+.evolution, 
+.ecology,
+.events {
+    background-color: var(--color-background);
     margin: 40px 60px;
-    box-shadow: 2px 4px 4px #c1beba; 
+    box-shadow: 2px 4px 4px var(--color-shadow); 
 }
 
 .grid-container3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    margin: 80px;
 }
 
-.img-kids, .img-researchers {
+.info-kids, .info-kids2 {
+    margin: 10px 80px 40px;
+}
+
+.img-kids {
     display: flex;
-    max-width: 60%;
-    height: auto;
-    margin: auto;
-    box-shadow: 2px 4px 4px #c1beba; 
+    justify-content: center;
+    box-shadow: 2px 4px 4px var(--color-shadow); 
 }
 
-.info-kids, .info-teachers, .info-researchers, .info-cosmology {
+.img-boy1 {
+    max-width: 50%;
+    margin: 50px auto;
+}
+
+.img-boy2 {
+    max-width: 80%;
+    margin: 0px auto 50px;
+
+}
+
+.info-kids, 
+.info-kids2,
+.info-teachers, 
+.info-researchers, 
+.info-cosmology, 
+.info-evolution, 
+.info-biology, 
+.info-ai, 
+.info-ecology, 
+.info-getinvolved,
+.info-events,
+.info-news {
     line-height: 2;
     font-size: 20px;
 }
@@ -367,7 +429,7 @@ hr {
     overflow: hidden;
     position: relative; 
     margin: 10px auto 40px;
-    box-shadow: 2px 4px 4px #c1beba; 
+    box-shadow: 2px 4px 4px var(--color-shadow); 
 }
 
 /*For researchers*/
@@ -376,68 +438,217 @@ hr {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     margin-top: 20px;
-    gap: 20px;
 }
 
 .info-researchers {
-    grid-column: 1/-1;
+    grid-column: span 3;
     text-align: left;
-    margin: auto 80px;
+    margin: 30px 80px;
 }
 
-.img-researchers, .column5, .column-5 {
+.img-researchers {
     display: flex;
-    max-width: 100%; 
-    height: auto;  
+    box-shadow: 2px 4px 4px var(--color-shadow);
 }
 
-.column5 {
-    margin-left: 20px;
+.column5 img {
+    max-width: 80%;
+    margin: 100px 30px 10px;
 }
 
-.column-5 {
-    margin: 20px;
+.column-5 img {
+    max-width: 50%;
+    margin: 30px auto;
+    
 }
+
+
 
 /* -----------Exhibitions----------- */
 
-.grid-container6 {
+/*cosmology*/
+
+.grid-container6, .grid-container10 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 10px;
 }
 
-.column6 {
-    text-align: left;
-}
-
 .info-cosmology {
-    margin: 80px 20px 0px 80px;
+    margin: 10px 20px 0px 80px;
 }
 
-.column6-img {
+.column6-img, .img-ecology, .img-visit {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-.img-exhibitions {
+.img-cosmology, .img-ai, .img-biology, .img-evolution, .img-visit {
     max-width: 60%;
     height: auto;
-    box-shadow: 2px 4px 4px #c1beba;
+    box-shadow: 2px 4px 4px var(--color-shadow);
     margin: 20px auto 40px;
 }
 
+
+/*evolution*/
+
+.grid-container7, .grid-container12, .grid-container14 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+.info-evolution, .info-ai {
+    margin: 10px 80px 20px 60px;
+}
+
+.img-evolution, .img-ai, .info-ecology {
+    margin-left: 80px;
+}
+
+.grid-container8 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 5px;
+}
+
+.img-biology {
+    display: flex;
+    margin-left: 60px;
+}
+
+.imgbio1 {
+    max-width: 80%;
+}
+
+.imgbio1, .imgbio2 {
+    max-width: 80%;
+    margin-top: 30px;;
+}
+
+.imgbio3 {
+    max-width: 80%;
+    margin: 100px 30px 30px 30px;
+} 
+
+.imgbio4 {
+    max-width: 80%;
+    margin: 30px;
+}
+
+.imgbio5 {
+    max-width: 100%;
+    margin-left: 0px;
+}
+
+.info-biology {
+    margin: 40px 0px 20px 80px;
+}
+
+.line1 {
+    border: 1.5px solid var(--color-black);
+    max-width: 90%;
+}
+
+/*ecology*/
+
+.img-ecology {
+    max-width: 60%;
+    height: auto;
+    margin: 100px auto 30px; 
+}
+
 /* -----------Get Involved----------- */
+
+.img-container {
+    display: flex;
+    margin: auto;
+    max-width: 800px;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.img-getinvolved {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 2px 4px 4px var(--color-shadow);
+}
+
+.grid-container9 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    margin: 80px;
+}
 /* -----------Events----------- */
+
+
+.grid-container11 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.info-news {
+    margin: 10px 20px 20px 80px;
+}
+
+.img-events {
+    display: flex;
+    justify-items: center;
+    max-width: 60%;
+    height: auto;
+    box-shadow: 2px 4px 4px var(--color-shadow);
+    margin: 40px auto 40px;
+}
+
 /* -----------Visit----------- */
+
+.visit {
+    margin: 40px;
+}
+
+.grid-container13 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.visit-box {
+    background-color: #E8F5E4;
+    max-width: 400px;
+    min-width: 250px;
+    max-height: 400px;
+    text-align: center;
+    margin: 20px 80px;
+    border: 3px solid var(--color-visit);
+    box-shadow: 2px 4px 4px var(--color-shadow);
+}
+
+.visit-box h3 {
+    margin-top: 40px;
+}
+
+.info-visit {
+    margin: 20px 40px 20px 80px;
+}
+
+.line-visit {
+    margin-left: 0px;
+}
 /* -----------Footer----------- */
 
 footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
 
 .footer-container {
@@ -447,14 +658,15 @@ footer {
 }
 
 .footer-column {
-    flex-basis: 25%;
+    margin-left: 10px;
+    flex-basis: 24%;
     box-sizing: border-box;
     padding: 10px;
 }
 
 .footer-row {
     flex-basis: 100%;
-    text-align: left;
+    text-align: center;
     margin-top: 20px;
 }
 
@@ -470,7 +682,7 @@ footer p, i {
 
 .footericons {
     display: flex;
-    color: #95D086;
+    color: var(--color-visit);
     margin-left: 15px;
 }
 
@@ -491,8 +703,8 @@ form {
 /* main button */
 .cta {
     display: inline-block;
-    background-color: #95D086;
-    color: #000;
+    background-color: var(--color-visit);
+    color: var(--color-black);
     padding: 8px 20px;
     border-radius: 5px;
     font-size: 14px;
@@ -503,10 +715,14 @@ form {
     margin: auto;
 }
 
+.cta-getinvolved {
+    width: 180px;
+    margin: 30px auto;
+}
 
 /* button footer */
 .cta-footer {
-    background-color: #95D086;
+    background-color: var(--color-visit);
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 10px;
@@ -517,22 +733,125 @@ form {
 }
 
 
-/*@media-queries*/
-@media screen and (max-width: 768px) {
-    .grid-container2 {
-        grid-template-columns: 1fr;
+/*--------@media-queries-----------*/
+
+@media (max-width: 1215px) {
+
+    .logo {
+        max-width: 200px;
+        margin-left: 10px;
+        margin-top: 20px;
     }
 
-    /* Reset column spans for smaller screens */
-    .column2:nth-child(5),
-    .column2:nth-child(6),
-    .column2:last-child {
-        grid-column: auto;
+    .navbar, .links a{
+        font-size: 14px;
+        margin: 20px 0px;
     }
 }
-In this example, the first row of the grid contains three equal columns, and the second row contains two columns with the specified proportions (1/3 and 2/3). The layout is achieved using the grid-template-columns and grid-column properties.
 
-Remember to adjust any colors, padding, margins, or other properties to match your design preferences.
+@media (max-width: 925px) {
+
+        /*hamburger-menu & navbar*/
+        .nav,
+        #menu-checkbox {
+          display: none;
+        }
+        
+        #menu-checkbox:checked ~ .nav {
+            display: block;
+          }
+        
+        .hamburger-menu {
+            display: inline-block;
+        }
+        
+        .navbar {
+            position: absolute;
+            cursor: pointer;
+            top: 120px;
+            right: 0px;
+            width: 45%;
+            text-align: center;
+          }
+    
+          .links a {
+            display: block;
+            background-color: var(--color-white);
+            color: var(--color-black);
+            padding: 10px 80px;
+            margin: 5px;
+            font-size: 16px;
+            box-shadow: 2px 4px 4px var(--color-shadow);
+            text-decoration: none;
+            border-radius: 5px;
+          }
+    
+          .icons i {
+            margin: 30px 50px;
+          }
+
+              /*home*/
+
+          .grid-container, .grid-container2, .grid-container3 {
+            grid-template-columns: 1fr;
+          } 
+
+          .dinosaur {
+            max-width: 40%;
+            margin: 30px auto 0px;
+          }
+
+
+          .h2home2 {
+            text-align: left;
+            margin-left: 88px; 
+          }
+
+          /*explore*/
+
+          .img-teachers {
+            width: 100px;
+            height: 100px;
+          }
+     
+
+
+            /* Reset column spans for smaller screens */
+          .column2:nth-child(5),
+          .column2:nth-child(6),
+          .column2:last-child {
+            grid-column: auto;
+          }
+
+         /*get involved*/
+          .grid-container9 {
+            grid-template-columns: 1fr;
+          }
+          
+         /*footer*/
+          .footer-column {
+            flex-basis: 100%;
+            text-align: center;
+          }
+
+}
+
+@media screen and (max-width: 768px) {
+   
+   
+
+
+
+   
+    }
+
+
+    
+    
+    
+    
+    
+    
 
 
 
