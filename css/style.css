@@ -56,6 +56,8 @@ main {
     box-shadow: 2px 4px 4px var(--color-shadow);
 }
 
+
+
 .h1-1::before {
     background-color: var(--color-explore);
 }
@@ -104,7 +106,7 @@ main {
     color: var(--color-visit);
 }
 
-.h2-explore, .h2-exhibitions, .h2-events {
+.h2-explore, .h2-exhibitions, .h2-events, .h2-news {
     text-transform: uppercase;
     font-size: 30px;
     text-shadow: 2px 4px 4px var(--color-shadow);
@@ -127,7 +129,7 @@ main {
     text-align: left;
 }
 
-.h2-events {
+.h2-events, .h2-news {
     color: var(--color-events);
 }
 
@@ -226,8 +228,8 @@ header .navbar .links a:hover {
 
 .slogan {
     display: flex;
-    max-width: 600px;
-    padding: 50px;
+    max-width: 100%;
+    padding: 50px 10px;
     margin: auto;
 }
 
@@ -242,10 +244,9 @@ header .navbar .links a:hover {
 }
 
 .h1home {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 45px;
-    margin: 20px 40px;
+    margin: 30px 40px;
     font-weight: bold;
     text-transform: uppercase;
     text-shadow: 2px 4px 4px var(--color-shadow);
@@ -269,12 +270,22 @@ header .navbar .links a:hover {
 .intro {
     line-height: 2;
     font-size: 20px;
-    padding: 40px;
+    padding-top: 30px;
 }
 
 .dinosaur {
-    max-width: 100%;
-   
+    max-width: 80%;
+    margin-top: 30px;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /*section3*/
@@ -372,7 +383,7 @@ hr {
 }
 
 .info-kids, .info-kids2 {
-    margin: 10px 80px 40px;
+    margin: 10px 60px 40px;
 }
 
 .img-kids {
@@ -384,11 +395,13 @@ hr {
 .img-boy1 {
     max-width: 50%;
     margin: 50px auto;
+    order: 2;
 }
 
 .img-boy2 {
     max-width: 80%;
     margin: 0px auto 50px;
+    order: 3;
 
 }
 
@@ -419,7 +432,7 @@ hr {
 .info-teachers {
     grid-column: 1/-1;
     text-align: left;
-    margin: auto 80px;
+    margin: auto 60px;
 }
 
 .img-teachers {
@@ -443,7 +456,7 @@ hr {
 .info-researchers {
     grid-column: span 3;
     text-align: left;
-    margin: 30px 80px;
+    margin: 30px 60px;
 }
 
 .img-researchers {
@@ -459,7 +472,6 @@ hr {
 .column-5 img {
     max-width: 50%;
     margin: 30px auto;
-    
 }
 
 
@@ -474,8 +486,8 @@ hr {
     gap: 10px;
 }
 
-.info-cosmology {
-    margin: 10px 20px 0px 80px;
+.info-cosmology, .info-ecology {
+    margin: 10px 60px 0px;
 }
 
 .column6-img, .img-ecology, .img-visit {
@@ -484,13 +496,16 @@ hr {
     justify-content: center;
 }
 
-.img-cosmology, .img-ai, .img-biology, .img-evolution, .img-visit {
+.img-cosmology, .img-ai, .img-evolution, .img-visit {
     max-width: 60%;
     height: auto;
     box-shadow: 2px 4px 4px var(--color-shadow);
     margin: 20px auto 40px;
 }
 
+.img-ai {
+    margin-left: 80px;
+}
 
 /*evolution*/
 
@@ -501,40 +516,32 @@ hr {
 }
 
 .info-evolution, .info-ai {
-    margin: 10px 80px 20px 60px;
-}
-
-.img-evolution, .img-ai, .info-ecology {
-    margin-left: 80px;
+    margin: 10px 60px 20px 60px;
 }
 
 .grid-container8 {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 5px;
 }
 
 .img-biology {
     display: flex;
-    margin-left: 60px;
+    max-width: 80%;
+    height: auto;
+    box-shadow: 2px 4px 4px var(--color-shadow);
+    margin: 20px auto 40px;
 }
 
 .imgbio1 {
-    max-width: 80%;
-}
-
-.imgbio1, .imgbio2 {
-    max-width: 80%;
-    margin-top: 30px;;
+    margin-top: 100px;
 }
 
 .imgbio3 {
-    max-width: 80%;
     margin: 100px 30px 30px 30px;
 } 
 
 .imgbio4 {
-    max-width: 80%;
     margin: 30px;
 }
 
@@ -544,7 +551,7 @@ hr {
 }
 
 .info-biology {
-    margin: 40px 0px 20px 80px;
+    margin: 20px 60px;
 }
 
 .line1 {
@@ -594,7 +601,11 @@ hr {
 }
 
 .info-news {
-    margin: 10px 20px 20px 80px;
+    margin: 10px 60px 20px;
+}
+
+.info-events1 {
+    margin: 10px 60px 20px 0px;
 }
 
 .img-events {
@@ -621,11 +632,10 @@ hr {
 
 .visit-box {
     background-color: #E8F5E4;
-    max-width: 400px;
-    min-width: 250px;
+    width: 300px;
     max-height: 400px;
     text-align: center;
-    margin: 20px 80px;
+    margin: 20px auto;
     border: 3px solid var(--color-visit);
     box-shadow: 2px 4px 4px var(--color-shadow);
 }
@@ -747,6 +757,20 @@ form {
         font-size: 14px;
         margin: 20px 0px;
     }
+
+    .grid-container8 {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .info-biology {
+        grid-column: span 2;
+    }
+
+    .info-biology {
+        margin: 10px 60px -80px;
+    }
+
 }
 
 @media (max-width: 925px) {
@@ -774,7 +798,7 @@ form {
             text-align: center;
           }
     
-          .links a {
+        .links a {
             display: block;
             background-color: var(--color-white);
             color: var(--color-black);
@@ -786,46 +810,102 @@ form {
             border-radius: 5px;
           }
     
-          .icons i {
+        .icons i {
             margin: 30px 50px;
           }
 
               /*home*/
 
-          .grid-container, .grid-container2, .grid-container3 {
-            grid-template-columns: 1fr;
-          } 
-
-          .dinosaur {
-            max-width: 40%;
-            margin: 30px auto 0px;
-          }
-
-
-          .h2home2 {
-            text-align: left;
-            margin-left: 88px; 
-          }
-
-          /*explore*/
-
-          .img-teachers {
-            width: 100px;
-            height: 100px;
-          }
-     
-
-
-            /* Reset column spans for smaller screens */
+                   /* Reset column spans for smaller screens */
           .column2:nth-child(5),
           .column2:nth-child(6),
           .column2:last-child {
             grid-column: auto;
           }
 
+          .grid-container, .grid-container2, .grid-container3, .grid-container5, .grid-container6, .grid-container7, .grid-container10, .grid-container11, .grid-container12, .grid-container13, .grid-container14 {
+            grid-template-columns: 1fr;
+          } 
+
+          .dinosaur {
+            margin: -60px auto 10px;
+          }
+
+          .h2home2 {
+            text-align: left;
+            margin-left: 88px; 
+          }
+
+          .grid-container {
+            margin: 0px 40px;
+          }
+
+          /*explore*/
+
+          .img-teachers {
+            width: 150px;
+            height: 150px;
+          }
+
+          .img-boy1 {
+            max-width: 50%;
+            margin: 10px auto;
+        }
+        
+        .img-boy2 {
+            max-width: 80%;
+            margin: 10px auto 10px;
+        }
+
+    
+        .info-researchers {
+            grid-column: span 1; 
+        }
+        
+        .column5 img,
+        .column-5 img {
+            max-width: 80%; 
+            margin: 30px auto; 
+        }
+        
+        /*exhibitions*/
+
+        .img-ecology {
+            margin: 10px auto 40px;
+        }
+
+        .img-evolution {
+            max-width: 50%;
+            margin: 40px auto 0px;
+        }
+
+        .ai img {
+            display: block;
+            max-width: 40%;
+            margin: 10px auto 0px;
+        }
+
          /*get involved*/
           .grid-container9 {
             grid-template-columns: 1fr;
+            margin: 40px; 
+            gap: 10px;
+          }
+
+          /*events*/
+
+          .info-events, .h2-events {
+            margin: 10px 40px;
+          }
+
+          /*visit*/
+
+          .visit-box {
+            margin: auto;
+          }
+
+          .info-visit, .visit-column2 {
+            margin: 10px 60px 40px;
           }
           
          /*footer*/
@@ -834,11 +914,45 @@ form {
             text-align: center;
           }
 
+          .footericons {
+            display: flex;
+            justify-content: center;
+          }
+
+       
+
 }
 
 @media screen and (max-width: 768px) {
+
+    .kids, 
+    .teachers, 
+    .researchers, 
+    .cosmology, 
+    .evolution, 
+    .ecology,
+    .events {
+        background-color: var(--color-background);
+        margin: 30px 40px;
+        box-shadow: 2px 4px 4px var(--color-shadow); 
+    }
+
+    .h1home {
+        font-size: 34px;
+    }
+
+
    
-   
+    /*explore*/
+
+    .img-teachers {
+        width: 100px;
+        height: 100px;
+      }
+
+  
+  
+  
 
 
 
@@ -846,9 +960,37 @@ form {
     }
 
 
+    @media (max-width: 480px) {
+
+
+        /*explore*/
+
+        .info-kids, .info-kids2, .info-teachers, .info-researchers, .info-cosmology, .info-evolution, .info-ai, .info-ecology, .info-events, .info-news, .info-visit, .visit-column2 {
+            margin: 10px 30px;
+        }
+
+
+        .info-biology {
+            margin: 10px 30px -80px;
+        }
+
+        .img-teachers {
+            width: 200px;
+            height: 200px;
+          }
+        
+        .grid-container4 {
+            grid-template-columns: 1fr;
+        }
+
+        /*exhibitions*/
+
+        .img-biology {
+            margin: 60px auto;
+        }
+    }
     
-    
-    
+
     
     
     
