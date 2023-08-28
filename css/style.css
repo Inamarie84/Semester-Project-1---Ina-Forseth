@@ -56,8 +56,6 @@ main {
     box-shadow: 2px 4px 4px var(--color-shadow);
 }
 
-
-
 .h1-1::before {
     background-color: var(--color-explore);
 }
@@ -792,9 +790,9 @@ form {
         .navbar {
             position: absolute;
             cursor: pointer;
-            top: 120px;
+            top: 100px;
             right: 0px;
-            width: 45%;
+            width: 390px;
             text-align: center;
           }
     
@@ -961,6 +959,11 @@ form {
 
 
     @media (max-width: 480px) {
+
+        h2 {
+            text-align: center;
+        }
+
 
 
         /*explore*/
