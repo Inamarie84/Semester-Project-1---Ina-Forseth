@@ -40,8 +40,7 @@ main {
   letter-spacing: 5px;
   text-align: center;
   text-shadow: 2px 4px 4px var(--color-shadow);
-  margin-bottom: 20px;
-  padding: 20px;
+  margin-top: 10px;
 }
 
 .h1::before {
@@ -79,7 +78,9 @@ main {
   text-transform: uppercase;
   padding: 30px;
   margin: -20px;
+  height: 30px;
   box-shadow: 2px 4px 4px var(--color-shadow);
+  
 }
 
 .h3-h1 {
@@ -114,7 +115,6 @@ main {
 
 .h2-explore {
   color: var(--color-explore);
-  margin-top: 20px;
 }
 
 .h2-exhibitions {
@@ -170,6 +170,7 @@ header {
 
 .navbar {
   display: block;
+  margin: auto;
 }
 
 .hamburger-menu {
@@ -222,6 +223,11 @@ header .navbar .links a:hover {
 
 .cta:hover {
   background-color: var(--color-getinvolved);
+  padding-right: 20px;
+}
+
+.cta:hover i {
+    transform: translateX(40px);
 }
 
 /* -----------Home----------- */
@@ -230,8 +236,8 @@ header .navbar .links a:hover {
 .slogan {
   display: flex;
   max-width: 100%;
-  padding: 50px 0px;
-  margin: auto;
+  padding: 20px 0px;
+  margin: 0px auto 10px;
 }
 
 /*section2*/
@@ -261,7 +267,7 @@ header .navbar .links a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin: -80px 100px 40px;
+  margin: -80px 60px 40px;
 }
 
 .column {
@@ -289,10 +295,14 @@ header .navbar .links a:hover {
   }
 }
 
+/*section2*/
+
+
+
 /*section3*/
 
 .h2home {
-  margin-left: 88px;
+  margin-left: 40px;
   padding: 10px;
   font-size: 40px;
   color: var(--color-visit);
@@ -332,16 +342,19 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
-  gap: 20px;
-  margin: 80px;
+  gap: 0px;
+  margin: 10px auto;
 }
 
 .column2 {
   border: 1px solid var(--color-white);
   box-shadow: 2px 4px 4px var(--color-shadow);
+  background-color: var(--color-background);
   padding: 20px;
+  margin: 20px;
   text-align: center;
 }
+
 
 .column2:last-child {
   grid-column: span 2;
@@ -370,8 +383,7 @@ hr {
 .cosmology,
 .evolution,
 .ecology,
-.events,
-.column2 {
+.events {
   background-color: var(--color-background);
   margin: 40px 60px;
   box-shadow: 2px 4px 4px var(--color-shadow);
@@ -397,13 +409,11 @@ hr {
 .img-boy1 {
   max-width: 50%;
   margin: 50px auto;
-  order: 2;
 }
 
 .img-boy2 {
   max-width: 80%;
   margin: 0px auto 50px;
-  order: 3;
 }
 
 .info-kids,
@@ -595,10 +605,21 @@ hr {
 
 .grid-container9 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 100px;
   margin: 80px;
 }
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-getinvolved {
+    margin-top: auto;
+}
+
 /* -----------Events----------- */
 
 .grid-container11 {
@@ -720,25 +741,27 @@ form {
 
 /* main button */
 .cta {
-  display: inline-block;
+  display: inline-flex;
   background-color: var(--color-visit);
   color: var(--color-black);
   font-weight: bold;
   box-shadow: 2px 4px 4px var(--color-shadow);
   padding: 8px 20px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 16px;
+  align-items: center;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
-  width: 100px;
-  margin: auto;
+  width: 160px;
+  margin: 5px auto 10px;
+  transition: transform 1s ease-in-out;
 }
 
-.cta-getinvolved {
-  width: 180px;
-  margin: 30px auto;
+.cta i {
+    margin-left: 5px;
 }
+
 
 /* button footer */
 .cta-footer {
@@ -755,6 +778,7 @@ form {
 /*--------@media-queries-----------*/
 
 @media (max-width: 1215px) {
+  
   .logo {
     max-width: 200px;
     margin-left: 10px;
@@ -764,8 +788,17 @@ form {
   .navbar,
   .links a {
     font-size: 14px;
-    margin: 20px 0px;
+    margin: 20px auto;
   }
+
+    /*home*/
+
+
+    .h3-h {
+        font-size: 16px;
+      } 
+
+      /*---------*/
 
   .grid-container8 {
     grid-template-columns: repeat(2, 1fr);
@@ -778,6 +811,8 @@ form {
   .info-biology {
     margin: 10px 60px -80px;
   }
+
+
 }
 
 @media (max-width: 925px) {
@@ -815,6 +850,7 @@ form {
   }
   /*home*/
 
+
   .column2:nth-child(5),
   .column2:nth-child(6),
   .column2:last-child {
@@ -836,17 +872,19 @@ form {
   }
 
   .dinosaur {
-    margin: -60px auto 10px;
+    margin: 50px auto 10px;
   }
 
-  .h2home2 {
-    text-align: left;
-    margin-left: 88px;
+  .h2home1 {
+    text-align: center;
+    margin-left: -10px;
   }
 
-  .grid-container {
-    margin: 0px 40px;
-  }
+
+ .h2home2 {
+    margin: 10px auto 40px; 
+ }
+
 
   /*explore*/
 
@@ -893,7 +931,8 @@ form {
   }
 
   .info-ai,
-  .info-evolution {
+  .info-evolution, 
+  .info2 {
     order: -1;
   }
 
@@ -903,6 +942,11 @@ form {
     margin: 40px;
     gap: 10px;
   }
+
+
+
+
+
 
   /*events*/
 
