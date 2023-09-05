@@ -54,6 +54,17 @@ h1::before {
   box-shadow: 2px 4px 4px var(--color-shadow);
 }
 
+h1 {
+    animation: h1 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes h1 {
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+
 .h1home::before {
     background-color: var(--color-white);
 }
@@ -1101,3 +1112,6 @@ form {
     margin: 60px auto;
   }
 }
+
+
+
