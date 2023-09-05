@@ -33,7 +33,7 @@ main {
 
 /* Headings */
 
-.h1 {
+h1 {
   font-family: "roboto mono", Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   font-size: 40px;
@@ -43,7 +43,7 @@ main {
   margin-top: 10px;
 }
 
-.h1::before {
+h1::before {
   content: "";
   display: inline-block;
   width: 60px;
@@ -52,6 +52,10 @@ main {
   margin-right: -30px;
   margin-bottom: -15px;
   box-shadow: 2px 4px 4px var(--color-shadow);
+}
+
+.h1home::before {
+    background-color: var(--color-white);
 }
 
 .h1-1::before {
@@ -132,6 +136,10 @@ main {
 .h2-events,
 .h2-news {
   color: var(--color-events);
+}
+
+.h2-events {
+    padding-top: 30px;
 }
 
 .h3-biology,
@@ -326,7 +334,7 @@ header .navbar .links a:hover {
 }
 
 .imghome {
-  max-width: 60%;
+  max-width: 80%;
   box-shadow: 2px 4px 4px var(--color-shadow);
   margin: 40px auto;
 }
@@ -629,13 +637,13 @@ hr {
   gap: 10px;
 }
 
-.info-news {
-  margin: 10px 60px 20px;
+.info-news,
+.info-events,
+.h2-events {
+  margin: 20px 60px 20px;
 }
 
-.info-events1 {
-  margin: 10px 60px 20px 0px;
-}
+
 
 .img-events {
   display: flex;
@@ -698,9 +706,9 @@ footer {
 
 .footer-column {
   margin-left: 10px;
+  margin-top: 20px;
   flex-basis: 24%;
   box-sizing: border-box;
-  padding: 10px;
 }
 
 .footer-row {
@@ -744,7 +752,6 @@ form {
   display: inline-flex;
   background-color: var(--color-visit);
   color: var(--color-black);
-  font-weight: bold;
   box-shadow: 2px 4px 4px var(--color-shadow);
   padding: 8px 20px;
   border-radius: 5px;
@@ -760,6 +767,13 @@ form {
 
 .cta i {
     margin-left: 5px;
+}
+
+.cta-getinvolved {
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+    border: none;
 }
 
 
@@ -812,7 +826,16 @@ form {
     margin: 10px 60px -80px;
   }
 
+  /*footer*/
+  .footer-column {
+    flex-basis: 100%;
+    text-align: center;
+  }
 
+  .footericons {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 925px) {
@@ -885,7 +908,6 @@ form {
     margin: 10px auto 40px; 
  }
 
-
   /*explore*/
 
   .img-teachers {
@@ -932,9 +954,12 @@ form {
 
   .info-ai,
   .info-evolution, 
-  .info2 {
+  .info2,
+  .visit-column2, 
+  .info-events1 {
     order: -1;
   }
+
 
   /*get involved*/
   .grid-container9 {
@@ -943,17 +968,21 @@ form {
     gap: 10px;
   }
 
-
-
-
-
-
   /*events*/
 
-  .info-events,
-  .h2-events {
-    margin: 10px 40px;
+
+  .img-events {
+    margin-top: 5px;
   }
+
+  .img-events1 {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  .h2-events {
+    padding-top: 10px;
+}
 
   /*visit*/
 
@@ -966,19 +995,14 @@ form {
     margin: 10px 60px 40px;
   }
 
-  /*footer*/
-  .footer-column {
-    flex-basis: 100%;
-    text-align: center;
+   .visit {
+    margin: 30px;
   }
 
-  .footericons {
-    display: flex;
-    justify-content: center;
-  }
 }
 
 @media screen and (max-width: 768px) {
+
   .kids,
   .teachers,
   .researchers,
@@ -991,8 +1015,23 @@ form {
     box-shadow: 2px 4px 4px var(--color-shadow);
   }
 
+.info-kids,
+.info-kids2,
+.info-teachers,
+.info-researchers,
+.info-cosmology,
+.info-evolution,
+.info-biology,
+.info-ai,
+.info-ecology,
+.info-getinvolved,
+.info-events,
+.info-news {
+  font-size: 16px;
+}
+
   .h1home {
-    font-size: 34px;
+    font-size: 26px;
   }
 
   /*explore*/
@@ -1001,11 +1040,28 @@ form {
     width: 100px;
     height: 100px;
   }
+
+ /*visit*/
+
+ .visit {
+    margin: 20px;
+  }
 }
 
 @media (max-width: 480px) {
-  h2 {
+
+    h1 {
+        font-size: 30px;
+    }
+  
+    h2 {
     text-align: center;
+  }
+
+  /*home*/
+
+  .imghome {
+    max-width: 100%;
   }
 
   /*explore*/
@@ -1019,10 +1075,11 @@ form {
   .info-ai,
   .info-ecology,
   .info-events,
+  .info-events1,
   .info-news,
   .info-visit,
   .visit-column2 {
-    margin: 10px 30px;
+    margin: 10px 20px;
   }
 
   .info-biology {
