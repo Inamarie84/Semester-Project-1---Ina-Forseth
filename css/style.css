@@ -66,7 +66,9 @@ h1 {
 }
 
 .h1home::before {
-    background-color: var(--color-white);
+  background-color: none;
+  box-shadow: none;
+
 }
 
 .h1-1::before {
@@ -264,7 +266,7 @@ header .navbar .links a:hover {
 .introhome {
   display: grid;
   grid-template-rows: 1fr auto;
-  background-color: var(--color-getinvolved);
+  background-color: var(--color-black);
   color: var(--color-white);
   box-shadow: 4px 4px 10px 4px #c1beba;
 }
@@ -295,12 +297,12 @@ header .navbar .links a:hover {
 
 .intro {
   line-height: 2;
-  font-size: 20px;
+  font-size: 24px;
   padding-top: 30px;
 }
 
-.dinosaur {
-  max-width: 80%;
+.earth {
+  max-width: 100%;
   margin-top: 30px;
   animation: spin 10s linear infinite;
 }
@@ -339,7 +341,7 @@ header .navbar .links a:hover {
 }
 
 .info {
-  font-size: 18px;
+  font-size: 22px;
   line-height: 2;
   margin: 30px auto;
 }
@@ -905,8 +907,13 @@ form {
     grid-template-columns: 1fr;
   }
 
-  .dinosaur {
-    margin: 50px auto 10px;
+  .intro, .info {
+    padding-top: 0px;
+    font-size: 18px;
+  }
+
+  .earth {
+    margin: 50px auto 0px;
   }
 
   .h2home1 {
