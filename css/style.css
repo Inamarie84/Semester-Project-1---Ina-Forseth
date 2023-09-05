@@ -277,7 +277,7 @@ header .navbar .links a:hover {
   margin: 30px 40px;
   font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 2px 4px 4px var(--color-shadow);
+  text-shadow: 1px 2px 2px var(--color-shadow);
 }
 
 .row {
@@ -297,7 +297,7 @@ header .navbar .links a:hover {
 
 .intro {
   line-height: 2;
-  font-size: 24px;
+  font-size: 22px;
   padding-top: 30px;
 }
 
@@ -318,10 +318,6 @@ header .navbar .links a:hover {
 
 /*section2*/
 
-
-
-/*section3*/
-
 .h2home {
   margin-left: 40px;
   padding: 10px;
@@ -341,7 +337,7 @@ header .navbar .links a:hover {
 }
 
 .info {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 2;
   margin: 30px auto;
 }
