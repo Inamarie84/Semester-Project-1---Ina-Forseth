@@ -703,22 +703,25 @@ hr {
 footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   background-color: var(--color-black);
   color: var(--color-white);
 }
 
 .footer-container {
   display: flex;
+  justify-content: space-between;
   flex-basis: 100%;
   flex-wrap: wrap;
 }
 
 .footer-column {
-  margin-left: 10px;
+  margin-left: 20px;
   margin-top: 20px;
-  flex-basis: 24%;
-  box-sizing: border-box;
+  flex-basis: 22%;
+}
+
+.footer-column p {
+  margin-left: 20px;
 }
 
 .footer-row {
@@ -727,27 +730,28 @@ footer {
   margin-top: 20px;
 }
 
-footer p,
-i {
+footer i {
   margin: 10px;
+  margin-left: 10px;
   letter-spacing: 1px;
 }
 
 .fheading {
   font-family: "roboto flex", Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
+  margin: 10px;
+  letter-spacing: 1px;
 }
 
 .footericons {
   display: flex;
   color: var(--color-visit);
-  margin-left: 15px;
 }
 
 .subscribe-input {
   height: 20px;
   min-width: 200px;
-  margin: 5px 0px;
+  margin: 10px 0px;
   border-radius: 5px;
 }
 
