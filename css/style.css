@@ -12,6 +12,7 @@
   --color-shadow: #c1beba;
   --color-white: #fff;
   --color-black: #000;
+  --color-grey: #333;
   --color-background: #f5f5f5;
 }
 
@@ -266,7 +267,7 @@ header .navbar .links a:hover {
 .introhome {
   display: grid;
   grid-template-rows: 1fr auto;
-  background-color: var(--color-black);
+  background-color: var(--color-grey);
   color: var(--color-white);
   box-shadow: 4px 4px 10px 4px #c1beba;
 }
@@ -304,7 +305,7 @@ header .navbar .links a:hover {
 .earth {
   max-width: 100%;
   margin-top: 30px;
-  animation: spin 10s linear infinite;
+  animation: spin 20s linear infinite;
 }
 
 @keyframes spin {
@@ -343,7 +344,7 @@ header .navbar .links a:hover {
 }
 
 .imghome {
-  max-width: 80%;
+  max-width: 60%;
   box-shadow: 2px 4px 4px var(--color-shadow);
   margin: 40px auto;
 }
@@ -648,8 +649,8 @@ hr {
 
 .info-news,
 .info-events,
-.h2-events {
-  margin: 20px 60px 20px;
+.h2-events  {
+  margin: 20px 60px;
 }
 
 
@@ -860,7 +861,7 @@ form {
 
   #menu-checkbox:checked + .navbar {
     display: block;
-    background-color: #333;
+    background-color: var(--color-grey);
     position: absolute;
     top: 60px;
     left: 0;
@@ -1113,6 +1114,13 @@ form {
 
   .img-biology {
     margin: 60px auto;
+  }
+
+  /*events*/
+
+  .info-events1 {
+    margin: 10px 20px 10px 0px;
+  }
   }
 }
 
