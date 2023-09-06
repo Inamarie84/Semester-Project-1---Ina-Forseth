@@ -129,31 +129,29 @@ h1 {
 .h2-explore,
 .h2-exhibitions,
 .h2-events,
-.h2-news {
-  text-transform: uppercase;
-  font-size: 30px;
-  text-shadow: 2px 4px 4px var(--color-shadow);
-}
-
-.h2-explore {
-  color: var(--color-explore);
-}
-
-.h2-exhibitions {
-  color: var(--color-exhibitions);
-}
-
+.h2-news,
 .h2-getinvolved {
   text-transform: uppercase;
   font-size: 30px;
-  color: var(--color-getinvolved);
   text-shadow: 2px 4px 4px var(--color-shadow);
-  text-align: left;
+  color: var(--color-grey);
+}
+
+.h2-explore {
+  text-decoration: underline 4px var(--color-explore);
+}
+
+.h2-exhibitions {
+  text-decoration: underline 4px var(--color-exhibitions);
+}
+
+.h2-getinvolved {
+  text-decoration: underline 4px var(--color-getinvolved);
 }
 
 .h2-events,
 .h2-news {
-  color: var(--color-events);
+  text-decoration: underline 4px var(--color-events);
 }
 
 .h2-events {
