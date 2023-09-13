@@ -888,6 +888,11 @@ form {
     margin-top: 0px;
   }
 
+
+  h2 {
+    text-align: center;
+  }
+
   /*home*/
 
   .column2:nth-child(5),
@@ -1070,10 +1075,6 @@ form {
 @media (max-width: 480px) {
   h1 {
     font-size: 30px;
-  }
-
-  h2 {
-    text-align: center;
   }
 
   /*home*/
