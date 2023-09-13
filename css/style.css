@@ -922,18 +922,20 @@ form {
   }
 
   .earth {
-    margin: 50px auto 0px;
+    margin: 0px auto;
   }
 
   .h2home1 {
     text-align: center;
     margin-left: -10px;
-    padding-bottom: 30px;
   }
 
   .h2home2 {
     margin: 10px auto 40px;
-    padding-bottom: 30px;
+  }
+
+  .grid-container, .grid-container2 {
+    margin: 10px 30px;
   }
 
   /*explore*/
