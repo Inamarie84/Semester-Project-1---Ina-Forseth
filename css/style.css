@@ -916,7 +916,7 @@ form {
   }
 
   .column p {
-    margin: 10px;
+    margin: 0px auto 20px;
     padding-top: 10px;
     font-size: 18px;
   }
@@ -928,10 +928,11 @@ form {
   .h2home1 {
     text-align: center;
     margin-left: -10px;
+    margin-bottom: -20px;
   }
 
   .h2home2 {
-    margin: 10px auto 40px;
+    margin: 10px auto -20px;
   }
 
   .grid-container, .grid-container2 {
@@ -1122,7 +1123,15 @@ form {
   /*exhibitions*/
 
   .img-biology {
-    margin: 60px auto;
+    margin: 50px auto;
+  }
+
+  .imgbio1, .imgbio2 {
+    margin-left: 25px; 
+  }
+
+  .imgbio3, .imgbio4 {
+    margin-right: 25px;
   }
 
   /*events*/
