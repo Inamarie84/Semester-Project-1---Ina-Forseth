@@ -263,6 +263,20 @@ header .navbar .links a:hover {
   max-width: 100%;
   padding: 20px 0px;
   margin: 0px auto 10px;
+  animation: slogan 1.5s forwards;
+  opacity: 0;
+}
+
+@keyframes slogan {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*section2*/
@@ -270,7 +284,7 @@ header .navbar .links a:hover {
 .introhome {
   display: grid;
   grid-template-rows: 1fr auto;
-  background-color: var(--color-grey);
+  background-color: var(--color-black);
   color: var(--color-white);
   box-shadow: 4px 4px 10px 4px #c1beba;
 }
@@ -413,7 +427,7 @@ hr {
 .ecology,
 .events {
   background-color: var(--color-background);
-  margin: 40px 60px;
+  margin: 40px 100px;
   box-shadow: 2px 4px 4px var(--color-shadow);
 }
 
