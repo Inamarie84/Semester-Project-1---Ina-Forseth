@@ -255,6 +255,7 @@ header .navbar .links a:hover {
 }
 
 /* -----------Home----------- */
+
 /*section1*/
 
 .slogan {
@@ -665,7 +666,7 @@ hr {
   max-width: 60%;
   height: auto;
   box-shadow: 2px 4px 4px var(--color-shadow);
-  margin: 40px auto 40px;
+  margin: 50px auto 30px;
 }
 
 /* -----------Visit----------- */
@@ -854,7 +855,6 @@ form {
 }
 
 @media (max-width: 925px) {
-
   .navbar {
     display: none;
     margin-top: 45px;
@@ -1022,7 +1022,6 @@ form {
 }
 
 @media screen and (max-width: 768px) {
-  
   .kids,
   .teachers,
   .researchers,
