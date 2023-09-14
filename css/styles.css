@@ -254,6 +254,7 @@ header .navbar .links a:hover {
   transform: translateX(40px);
 }
 
+
 /* -----------Home----------- */
 
 /*section1*/
@@ -802,9 +803,7 @@ form {
 }
 
 .cta-getinvolved {
-  display: inline-block;
-  width: 180px;
-  text-align: center;
+  width: 200px;
   border: none;
 }
 
