@@ -38,7 +38,7 @@ Installing
 
 1. Clone the repository:
 ```bash
-git clone git@github.com:https://github.com/Inamarie84/Semester-Project-1---Ina-Forseth
+git clone git@github.com:https://github.com/Inamarie84/Semester-Project-1---Ina-Forseth.git
 ```
 
 2. Install dependencies:
