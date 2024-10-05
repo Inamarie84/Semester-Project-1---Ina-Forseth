@@ -23,7 +23,16 @@ I created a website for an interactive science museum. The museum is called the 
 
 ## Project Brief
 
-The Community Science Museum is set to open in your town/city, targeting primary and middle school children (ages 7-15) and families with young children. The museum seeks to create an informative and appealing website aimed at attracting middle school pupils and their parents. The website should engage youngsters without being condescending, assuming the audience is curious and intelligent. It needs to be both informative and engaging, encouraging visitors to explore the museum. Additionally, the website must be responsive and user-friendly across various devices.
+The Community Science Museum is an interactive science museum set to open in your town/city, targeting primary and middle school children (ages 7-15) and families with young children. The museum seeks to create an informative and appealing website aimed at attracting middle school pupils and their parents. The website should engage youngsters without being condescending, assuming the audience is curious and intelligent. It needs to be both informative and engaging, encouraging visitors to explore the museum. Additionally, the website must be responsive and user-friendly across various devices.
+
+### Project requirements
+
+Showcase the student's creative and technical abilities, reflecting the skills and knowledge acquired during the first-semester curriculum. This involves applying design principles, managing the project effectively, utilizing communication technologies, and developing the website using HTML and CSS.
+
+* The target audience should be carefully considered and the proposed design should reflect this.
+* Consideration must be given to compositional principles, typography, and color schemes.
+* Needs to be responsive, easy to use on various devices as well as attractive.
+* A website prototype should be created using your chosen software (Adobe XD, Figma, etc.). [View Figma Design](https://www.figma.com/proto/ZswYI9ZglznwoO4fFb7iJp/Semester-Project-1---Ina-Forseth?page-id=0%3A1&node-id=3-2&node-type=canvas&viewport=595%2C380%2C0.07&t=9ywrakU1W9HNgy4O-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=3%3A2) 
 
 ## Built with
 
