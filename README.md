@@ -15,7 +15,7 @@ Click the image above to visit the website or click the link below:
 
 Github repository:
 
-[Repository link](https://github.com/Noroff-FEU-Assignments/cross-course-project-Inamarie84/tree/cms-ca)
+[Repository link](https://github.com/Inamarie84/Semester-Project-1---Ina-Forseth)
 
 ## Description
 
