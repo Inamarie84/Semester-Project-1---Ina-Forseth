@@ -8,7 +8,6 @@ Here is a screenshot of my Community Science website:
 
 [![Screenshot](https://github.com/user-attachments/assets/2d29928b-f797-4089-be1f-1c878837377f)](https://semesterproject1-inaforseth-1711.netlify.app/)
 
-
 Click the image above to visit the website or click the link below:
 
 [Hosted application demo link](https://semesterproject1-inaforseth-1711.netlify.app/)
@@ -20,7 +19,7 @@ Github repository:
 ## Description
 
 This is my Semester Project 1 assignment @ [Noroff - School of technology and digital media](https://www.noroff.no/).
-I created a website for an interactive science museum. The museum is called the Community Science Museum, and the target audience are children aged 7-15 as well as families with children.     
+I created a website for an interactive science museum. The museum is called the Community Science Museum, and the target audience are children aged, 7-15 as well as families with children.     
 
 ## Project Brief
 
@@ -29,6 +28,7 @@ The Community Science Museum is set to open in your town/city, targeting primary
 ## Built with
 
 Front-end Components:
+
 * HTML (HyperText Markup Language)
 * CSS (Cascading Style Sheets)
 
@@ -36,9 +36,9 @@ Front-end Components:
 
 Installing
 
-1. Clone the repo:
+1. Clone the repository:
 ```bash
-git clone git@github.com:https://github.com/Noroff-FEU-Assignments/cross-course-project-Inamarie84
+git clone git@github.com:https://github.com/Inamarie84/Semester-Project-1---Ina-Forseth
 ```
 
 2. Install dependencies:
@@ -55,7 +55,7 @@ npm run start
 ```
 ## Contributing
 
-If you have any suggestions that would improve this project, you can fork the repo and create a pull request.
+If you have any suggestions that would improve this project, please fork the repository and create a pull request.
 
 ## Contact
 
